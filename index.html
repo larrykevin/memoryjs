@@ -8,17 +8,37 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <p>Movimientos</p>
-            <p>00</p>
-        </div>
-        <div>
-            <p>Nivel</p>
-            <p>Pollito</p>
-        </div>
+    <header class="header">
+        <section class="header__initial">
+            <h1>Memory JS</h1>
+        </section>
+        <section class="header__score">
+            <div>
+                <p>Movimientos</p>
+                <p>00</p>
+            </div>
+            <div>
+                <p>Nivel</p>
+                <p>Pollito</p>
+            </div>
+        </section>
     </header>
     <main>
+        <section class="welcome">
+            <div>
+                <h2>Bienvenid@!!</h2>
+                <div class="welcome__instructions">
+                    <p>Instrucciones para jugar:</p>
+                    <ul>
+                        <li>Coincide cartas pares hasta <br/>que el tablero quede vacío</li>
+                        <li>Hay 3 niveles conforme avances<br/>se aumentará la dificultad</li>
+                        <li>Podrás revelar las cartas si<br/>presionas sobre ellas</li>
+                        <li>Tendrás un número limitado de<br/>movimientos dependiendo del nivel</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="lets-go">Empezar a jugar</button>
+        </section>
         <section id="table" class="table">
             <div class="card">
                 <span class="card__content">👾</span>
