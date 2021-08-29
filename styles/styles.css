@@ -148,9 +148,9 @@ main {
     backface-visibility: hidden;
     background-color: white;
 }
-/* .card__content::selection {
+.card__content::selection {
     background: transparent;
-} */
+}
 .card.reveal {
     transform: rotateX(-180deg);
 }
