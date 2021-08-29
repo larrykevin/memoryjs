@@ -6,5 +6,11 @@ buttonLetsGo.addEventListener('click', function() {
     const table = document.querySelector('.table');
 
     welcome.style.display = 'none';
-    table.style.display = 'block';
+    table.style.display = 'grid';
 })
+
+document.querySelectorAll('.card').forEach(function(elemento) {
+    elemento.addEventListener('click', function() {
+        this.classList.add('reveal');
+    });
+});

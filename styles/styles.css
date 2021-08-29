@@ -95,3 +95,42 @@ main {
 .table {
     display: none;
 }
+.card {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 7.2rem;
+    height: 7.2rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #5948F2;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.card__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    font-size: 2.8rem;
+    border: 2px solid #BE92EE;
+    border-radius: 10px;
+    transform: rotateX(-180deg);
+    backface-visibility: hidden;
+    background-color: white;
+}
+.card__content::selection {
+    background: transparent;
+}
+.card.reveal {
+    transform: rotateX(-180deg);
+}
+.table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
