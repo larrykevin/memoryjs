@@ -13,7 +13,7 @@ const easyLevelCards = () => {
 }
 
 const mediumLevelCards = () => {
-    const cardsGroupTwo = cards[1].concat(cardsGroupOne);
+    const cardsGroupTwo = cards[1].concat(cards[0]);
     const totalCardThisLevel = cardsGroupTwo.concat(cardsGroupTwo);
 
     totalCardThisLevel.sort(randomValue);
@@ -21,6 +21,7 @@ const mediumLevelCards = () => {
 }
 
 const hardLevelCards = () => {
+    const cardsGroupTwo = cards[1].concat(cards[0]);
     const cardsGroupThree = cards[2].concat(cardsGroupTwo);
     const totalCardThisLevel = cardsGroupThree.concat(cardsGroupThree);
 
@@ -31,3 +32,5 @@ const hardLevelCards = () => {
 function randomValue() {
     return 0.5 - Math.random();
 }
+
+export { easyLevelCards, mediumLevelCards, hardLevelCards };

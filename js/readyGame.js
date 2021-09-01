@@ -1,15 +1,11 @@
+import { goGame } from './goGame.js';
+import { easyLevelCards, mediumLevelCards, hardLevelCards } from './valueCards.js';
+import { printCards } from './printCards.js';
+import { cardReveals } from './revealCards.js';
+
 const buttonReadyGame = document.querySelector('.ready');
-buttonReadyGame.addEventListener('click', stylesChange);
+buttonReadyGame.addEventListener('click', goGame);
 
-function stylesChange() {
-    const welcome = document.querySelector('.welcome');
-    const table = document.querySelector('.table');
-    const headerScore = document.querySelector('.header__score');
-    const headerInitial = document.querySelector('.header__initial');
+printCards(hardLevelCards());
 
-    welcome.style.display = 'none';
-    headerInitial.style.display = 'none';
-
-    headerScore.style.display = 'flex';
-    table.style.display = 'grid';
-}
+cardReveals();

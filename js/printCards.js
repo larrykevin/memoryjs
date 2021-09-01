@@ -1,10 +1,15 @@
-const contentsCards = document.querySelectorAll('.card__content');
-const arrContentsCards = [...contentsCards];
+export const printCards = level => {
+    const table = document.querySelector('#table');
+    let cardsForLevel = level;
+    table.innerHTML = '';
 
-function printCards(contentsCards, cards) {
-    for (let i = 0; i < contentsCards.length; i++) {
-        contentsCards[i].textContent = cards[i];
-    }
+    cardsForLevel.forEach(function(contentCard) {
+        let card = document.createElement('div');
+        card.classList.add('card');
+
+        card.innerHTML = `
+            <span class="card__content">${contentCard}</span>
+        `
+        table.appendChild(card);
+    })
 }
-
-printCards(arrContentsCards, easyLevelCards());
