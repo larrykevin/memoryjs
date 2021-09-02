@@ -1,3 +1,5 @@
+import { compare } from './compareCards.js';
+
 export const cardReveals = () => {
     const cardsInTable = document.querySelectorAll('.card');
 
@@ -18,11 +20,7 @@ export const cardReveals = () => {
                 return
             }
 
-            if (reveals[0].textContent === reveals[1].textContent) {
-                console.log('success')
-            } else {
-                console.log('error')
-            }
+            compare(reveals);
         });
     });
 }
