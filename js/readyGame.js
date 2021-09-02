@@ -6,6 +6,6 @@ import { cardReveals } from './revealCards.js';
 const buttonReadyGame = document.querySelector('.ready');
 buttonReadyGame.addEventListener('click', goGame);
 
-printCards(hardLevelCards());
+printCards(easyLevelCards());
 
 cardReveals();
