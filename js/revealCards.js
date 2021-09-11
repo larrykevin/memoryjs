@@ -6,16 +6,14 @@ export const cardReveals = () => {
     cardsInTable.forEach(function(element) {
         element.addEventListener('click', function() {
             let reveals
-            const totalReveals = document.querySelectorAll('.reveal');
-
+            const totalReveals = document.querySelectorAll('.reveal:not(.success)');
             if (totalReveals.length > 1) {
                 return
             }
 
             this.classList.add('reveal');
 
-            reveals = document.querySelectorAll('.reveal');
-
+            reveals = document.querySelectorAll('.reveal:not(.success)');
             if (reveals.length < 2) {
                 return
             }

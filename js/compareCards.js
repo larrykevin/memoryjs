@@ -1,15 +1,19 @@
 export const compare = cardContent => {
     if (cardContent[0].textContent === cardContent[1].textContent) {
-        success()
+        success(cardContent);
     } else {
-        error()
+        error(cardContent);
     }
 }
 
-function success() {
-    console.log('success')
+function success(cards) {
+    cards.forEach(element => {
+        element.classList.add('success');
+    })
 }
 
-function error() {
-    console.log('error')
+function error(cards) {
+    cards.forEach(element => {
+        element.classList.remove('reveal');
+    })
 }
