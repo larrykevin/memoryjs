@@ -160,6 +160,7 @@ main {
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 10px;
     place-items: center;
+    height: 100%;
 }
 .table div:nth-of-type(1) {
     grid-column: 2 / 3;
@@ -195,4 +196,35 @@ main {
 }
 .success {
     opacity: 0;
+}
+.error {
+    background-color: green;
+}
+.message {
+    grid-column: 1 / 5;
+    grid-row: 1 / 7;
+    display: grid;
+    place-items: center;
+    height: 38rem;
+    width: 27rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 12px 50px rgba(58, 42, 74, 0.3);
+}
+.message .dead {
+    content: url('../assets/images/crossbone.svg');
+    width: 5.6rem;
+    height: auto;
+}
+.message p {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.message button {
+    color: #5948F2;
+    background: transparent;
+}
+.message button:hover {
+    text-decoration: underline;
 }

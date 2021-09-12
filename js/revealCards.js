@@ -1,6 +1,6 @@
 import { compare } from './compareCards.js';
 
-export const cardReveals = () => {
+export const revealCards = () => {
     const cardsInTable = document.querySelectorAll('.card');
 
     cardsInTable.forEach(function(element) {
