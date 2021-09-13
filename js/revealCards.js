@@ -20,28 +20,6 @@ export const revealCards = () => {
             }
 
             compare(reveals);
-            const successCards = document.querySelectorAll('.reveal.success');
-
-            totalReveals.forEach(() => {
-                if (successCards.length === cardsInTable.length) {
-                    const table = document.querySelector('#table');
-                    table.innerHTML = '';
-                    table.appendChild(messageNextLevel());
-                }
-            })
         });
     });
-}
-
-function messageNextLevel() {
-    const messageNextLevel = document.createElement('section');
-    messageNextLevel.className = 'message-success';
-
-    messageNextLevel.innerHTML = `
-        <span class="dead"></span>
-        <p>Game Over</p>
-        <button class="reinit">¿Volver a intentar? -></button>
-    `;
-
-    return messageNextLevel;
 }
