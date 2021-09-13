@@ -200,7 +200,7 @@ main {
 .error {
     background-color: green;
 }
-.message {
+.message-over {
     grid-column: 1 / 5;
     grid-row: 1 / 7;
     display: grid;
@@ -212,16 +212,16 @@ main {
     background-color: #fff;
     box-shadow: 0px 12px 50px rgba(58, 42, 74, 0.3);
 }
-.message .dead {
+.message-over .dead {
     content: url('../assets/images/crossbone.svg');
     width: 5.6rem;
     height: auto;
 }
-.message p {
+.message-over p {
     font-size: 2.2rem;
     font-weight: bold;
 }
-.message button {
+.message-over button {
     color: #5948F2;
     background: transparent;
 }

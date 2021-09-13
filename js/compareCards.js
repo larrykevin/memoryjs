@@ -15,7 +15,7 @@ let count = 1;
 function success(cards) {
     cards.forEach(element => {
         element.classList.add('success');
-    })
+    });
 }
 
 function error(cards) {
@@ -29,13 +29,13 @@ function error(cards) {
         });
     }, 500);
 
-    const pointsMove = document.querySelector('.moves span:nth-of-type(1)');
-    pointsMove.textContent = `0${count++}`;
+    const movePoints = document.querySelector('.move-points');
+    movePoints.textContent = `0${count++}`;
 
     if (count > 8) {
         const table = document.querySelector('#table');
         count = 1;
-        pointsMove.textContent = `00`;
+        movePoints.textContent = `00`;
 
         table.innerHTML = '';
         table.appendChild(messageGameOver());
@@ -51,7 +51,7 @@ function error(cards) {
 
 function messageGameOver() {
     const messageGameOver = document.createElement('section');
-    messageGameOver.className = 'message';
+    messageGameOver.className = 'message-over';
 
     messageGameOver.innerHTML = `
         <span class="dead"></span>
@@ -61,3 +61,4 @@ function messageGameOver() {
 
     return messageGameOver;
 }
+
