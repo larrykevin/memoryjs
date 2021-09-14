@@ -147,8 +147,6 @@ main {
     border: 2px solid #BE92EE;
     border-radius: 10px;
     transform: rotateX(-180deg);
-    backface-visibility: hidden;
-    background-color: white;
 }
 .card__content::selection {
     background: transparent;
