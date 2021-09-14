@@ -83,6 +83,7 @@ li {
     background-color: #BE92EE;
 }
 .header__score .moves {
+    margin-top: 0.3rem;
     font-size: 2.8rem;
     font-weight: bold;
 }
@@ -99,6 +100,8 @@ main {
     justify-content: space-between;
 }
 .welcome button {
+    display: grid;
+    place-items: center;
     margin-top: 20px;
     color: #fff;
     background-color: #5551ff;
@@ -121,6 +124,7 @@ main {
 }
 .table {
     display: none;
+    transition: all 0.6s ease-in-out;
 }
 .card {
     position: relative;
@@ -144,9 +148,10 @@ main {
     right: 0;
     top: 0;
     bottom: 0;
-    display: grid;
-    place-items: center;
-    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
     border: 2px solid #BE92EE;
     border-radius: 10px;
     transform: rotateY(-180deg);
@@ -218,6 +223,7 @@ main {
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 0px 12px 50px rgba(58, 42, 74, 0.3);
+    transition: all 0.6s ease;
 }
 .message-over .dead {
     content: url('../assets/images/crossbone.svg');
@@ -226,6 +232,7 @@ main {
 }
 .message-over p {
     font-size: 2.2rem;
+    line-height: 2.3rem;
     font-weight: bold;
 }
 .message-over button {
@@ -247,6 +254,7 @@ main {
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 0px 20px 40px rgba(155, 106, 208, 0.3);
+    transition: all 0.6s ease;
 }
 .message-success .next {
     content: url('../assets/images/cracker.svg');
@@ -255,6 +263,7 @@ main {
 }
 .message-success p {
     font-size: 2.2rem;
+    line-height: 2.3rem;
     font-weight: bold;
     text-align: center;
     color: #5948F2;
