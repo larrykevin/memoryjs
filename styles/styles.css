@@ -92,13 +92,13 @@ main {
     z-index: 1;
 }
 .welcome {
-    height: 100%;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .welcome button {
+    margin-top: 20px;
     color: #fff;
     background-color: #5551ff;
 }
@@ -132,8 +132,6 @@ main {
     background: #5948F2;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
 }
 .card__content {
     position: absolute;
@@ -147,12 +145,15 @@ main {
     border: 2px solid #BE92EE;
     border-radius: 10px;
     transform: rotateX(-180deg);
+    backface-visibility: hidden;
 }
 .card__content::selection {
     background: transparent;
 }
 .card.reveal {
     transform: rotateX(-180deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 .table {
     padding: 40px 20px;
