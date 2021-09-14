@@ -152,7 +152,7 @@ main {
     transform: rotateX(-180deg);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    background: #fff;
+    background-color: #fff;
 }
 .table {
     padding: 40px 20px;
