@@ -151,6 +151,7 @@ main {
 .card.reveal {
     transform: rotateX(-180deg);
     transform-style: preserve-3d;
+    backface-visibility: hidden;
     background: #fff;
 }
 .table {
