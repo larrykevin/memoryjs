@@ -1,5 +1,5 @@
 import { goGame } from './goGame.js';
-import { easyLevelCards, mediumLevelCards, hardLevelCards } from './valueCards.js';
+import { easyLevelCards } from './valueCards.js';
 import { printCards } from './printCards.js';
 import { revealCards } from './revealCards.js';
 
