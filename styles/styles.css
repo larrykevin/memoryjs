@@ -123,7 +123,6 @@ main {
     display: none;
 }
 .card {
-    position: relative;
     display: grid;
     place-items: center;
     width: 7.2rem;
@@ -133,6 +132,8 @@ main {
     background: #5948F2;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 .card__content {
     position: absolute;
@@ -145,14 +146,15 @@ main {
     font-size: 2.8rem;
     border: 2px solid #BE92EE;
     border-radius: 10px;
-    transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
     backface-visibility: hidden;
+    background: white;
+}
+.card__content::selection {
+    background: transparent;
 }
 .card.reveal {
-    transform: rotateX(-180deg);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    background-color: #fff;
+    transform: rotateY(-180deg);
 }
 .table {
     padding: 40px 20px;
