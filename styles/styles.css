@@ -123,6 +123,7 @@ main {
     display: none;
 }
 .card {
+    position: relative;
     display: grid;
     place-items: center;
     width: 7.2rem;
@@ -132,6 +133,8 @@ main {
     background: #5948F2;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }
@@ -147,6 +150,8 @@ main {
     border: 2px solid #BE92EE;
     border-radius: 10px;
     transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     background: white;
 }
